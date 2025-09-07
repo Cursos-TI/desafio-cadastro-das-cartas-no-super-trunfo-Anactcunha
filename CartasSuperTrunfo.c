@@ -121,6 +121,15 @@ printf("############-\n");
     printf("-------CARTA 2 APRESENTADA-------\n");
     printf("----------------\n");
 
-    
+                                printf("COMPARAÇÃO DAS CARTAS");
+printf("############-\n");
+
+                printf("area1 >= area2: %d\n", area1 >= area2);
+                printf("populacao1 >= populacao2: %f\n", populacao1 >= populacao2);
+                printf("numerodospontosturisticos1 >= numerodospontosturisticos2: %d\n", pontosturisticos1 >= pontosturisticos2);
+                printf("pib1 >= pib2: %f\n", pib1 >= pib2);
+                printf("pib_per_capita1 >= pib_per_capita2: %f\n", pib_per_capita1 >= pib_per_capita2);
+                printf("densidade_populacional1 >= densidade_populacional2: %f\n", densidade_populacional1 >= densidade populacional2);
+                
     return 0;
 }
