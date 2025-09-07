@@ -9,6 +9,13 @@ int main(){
                     char cidade1[50], cidade2[50];  
                         float densidade_populacional1, densidade_populacional2;
                             float pib_per_capita1, pib_per_capita2;
+                                area1 = 432, area2 = 693;
+                                        populacao1 = 1830.795, populacao2 = 2564.204;
+                                            numerodospontosturisticos1 = 25, numerodospontosturisticos2 = 103;
+                                                pib1 = 23006.000, pib2 = 62954.000;
+                                                    pib_per_capita1 = (float)(pib1 / populacao1), pib_per_capita2 = (float)(pib2 / populacao2);
+                                                        densidade_populacional1 = (float)(populacao1 / area1), densidade_populacional2 = (float)(populacao2 / area2);
+    
 
 
     printf("Carta01 \n");
