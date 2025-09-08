@@ -15,17 +15,15 @@
                                                 densidade_populacional1 = (float)(populacao1 / area1);
 // variáveis carta 2                                             
         int numerodacarta2, numerodospontosturisticos2;
-                float area2, pib2, densidade_populacional2, super_Poder2;
+                float area2, pib2, densidade_populacional2, pib_per_capita2, super_Poder2;
                     unsigned long int populacao2;
                         char estado2[50], cidade2[50];  
-                            float ;
-                                float pib_per_capita2;
-                                    area2 = 693;
-                                        populacao2 = 2564204000;
-                                            numerodospontosturisticos2 = 103;
-                                                pib2 = 62954.000;
-                                                    pib_per_capita2 = (float)(pib2 / populacao2);
-                                                        densidade_populacional2 = (float)(populacao2 / area2);
+                               area2 = 693;
+                                    populacao2 = 2564204000;
+                                         numerodospontosturisticos2 = 103;
+                                             pib2 = 62954.000;
+                                                  pib_per_capita2 = (float)(pib2 / populacao2);
+                                                      densidade_populacional2 = (float)(populacao2 / area2);
 
 
                                             printf("Carta01 \n");
