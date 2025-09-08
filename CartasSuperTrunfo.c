@@ -87,20 +87,22 @@
 
     // cálculo pib per capita Carta 1
     pib_per_capita1 = (float)(pib1 / populacao1);
-    printf("O Pib per capita é: %f \n", pib_per_capita1);
-
-    //cálculo densidade populacional Carta 1
+    
+    // cálculo densidade populacional Carta 1
     densidade_populacional1 = (float)(populacao1 / area1);
-    printf("A densidade populacional é: %f \n", densidade_populacional1);
-
+    
+    // cálculo super poder carta 1
+    super_Poder1 = (float)populacao1 + area1 + pib1 + numerodospontosturisticos1 + pib_per_capita1 + (1.0f / densidade_populacional1);
+    
     // cálculo pib per capita Carta 2
     pib_per_capita2 = (float)(pib2 / populacao2);
-    printf("O Pib per capita é: %f \n", pib_per_capita2);
-
+    
     // cálculo densidade populacional carta 2
     densidade_populacional2 = (float)(populacao2 / area2);
-    printf("A densidade populacional é: %f \n", densidade_populacional2);
-
+    
+    // cálculo super poder carta 2
+    super_Poder2 = (float)populacao2 + area2 + pib2 + numerodospontosturisticos2 + pib_per_capita2 + (1.0f / densidade_populacional2);
+    
 
     printf("############-\n");
     //a partir de agora o código é para exibir os dados inseridos em cada carta (1 e 2)
@@ -119,6 +121,9 @@
     // dados inseridos sobre o número de pontos turísticos que consta na carta
     printf("Pib: %f.\n", pib1);
     // dados inseridos sobre o pib da cidade que consta na carta
+    printf("O Pib per capita é: %f \n", pib_per_capita1);
+    printf("A densidade populacional é: %f \n", densidade_populacional1);
+    printf("Super Poder: %.2f\n\n", super_Poder1);
 
 
     printf("-------CARTA 1 APRESENTADA-------\n");
@@ -133,6 +138,9 @@ printf("############-\n");
     printf("População: %.f.\n", populacao2);
     printf("Número dos pontos turísticos: %d.\n", numerodospontosturisticos2);
     printf("Pib: %f.\n", pib2);
+    printf("O Pib per capita é: %f \n", pib_per_capita2);
+    printf("A densidade populacional é: %f \n", densidade_populacional2);
+    printf("Super Poder: %.2f\n\n", super_Poder2);
     
 
     printf("-------CARTA 2 APRESENTADA-------\n");
