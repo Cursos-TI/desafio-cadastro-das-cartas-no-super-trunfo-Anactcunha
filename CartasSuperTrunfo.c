@@ -41,7 +41,7 @@ int main(){
     scanf ("%f", &area1);
     // usuário digita numero da área da cidade 
     printf("Digite a população da cidade: \n");
-    scanf("%u", &populacao1);
+    scanf("%lu", &populacao1);
     // usuário digita a população da cidade
     printf("Digite o número de pontos turísticos: \n");
     scanf("%d", &numerodospontosturisticos1);
@@ -76,7 +76,7 @@ int main(){
     scanf ("%f", &area2);
     // usuário digita numero da área da cidade 
     printf("Digite a população da cidade: \n");
-    scanf("%u", &populacao2);
+    scanf("%lu", &populacao2);
     // usuário digita a população da cidade
     printf("Digite o número de pontos turísticos: \n");
     scanf("%d", &numerodospontosturisticos2);
@@ -97,7 +97,7 @@ int main(){
     printf("-------CARTA 2 CADASTRADA-------\n");
     printf("----------------\n");
 
-    printf("População: %u\n", populacao1);
+    printf("População: %lu\n", populacao1);
     printf("Número dos pontos turísticos: %d\n", numerodospontosturisticos1);
     printf("Pib: %.3f\n", pib1);
     pib_per_capita1 = (pib1 / populacao1);
@@ -110,7 +110,7 @@ int main(){
 
     printf("-------CARTA 1 APRESENTADA-------\n");
 
-    printf("População: %u\n", populacao2);
+    printf("População: %lu\n", populacao2);
     printf("Número dos pontos turísticos: %d\n", numerodospontosturisticos2);
     printf("Pib: %.3f\n", pib2);
     pib_per_capita2 = (pib2 / populacao2);
@@ -126,7 +126,7 @@ int main(){
 
                  
                 printf("area1 > area2: %d\n", area1 > area2);
-                printf("populacao1 > populacao2: %u\n", populacao1 > populacao2)? "Carta 1 venceu: Carta 2 venceu", (populacao1 > populacao2):
+                printf("populacao1 > populacao2: %lu\n", populacao1 > populacao2)? "Carta 1 venceu: Carta 2 venceu", (populacao1 > populacao2):
                 printf("numerodospontosturisticos1 > numerodospontosturisticos2: %d\n", numerodospontosturisticos1 > numerodospontosturisticos2);
                 printf("pib1 > pib2: %d\n", pib1 > pib2);
                 printf("pib_per_capita1 > pib_per_capita2: %d\n", pib_per_capita1 >= pib_per_capita2);
@@ -143,25 +143,25 @@ int main(){
 
                 printf("---------------RESULTADO DA COMPARAÇÃO DAS CARTAS\n-------------");
                 // aqui a comparação das cartas irá gerar a mensagem que informa qual carta venceu
-                printf("Área 1 > Área 2: ");
+                printf("Área 1 > Área 2: \n");
                 if (area1 > area2){
                 printf("Carta 1 venceu!\n");   
                 }else {  
                 printf("Carta 2 venceu!\n");}
-
-                printf("População 1 > População 2: ");
-                if (populacao1 > populacao2) {
-                printf("Carta 1 venceu!\n");   
-                }else {  
-                printf("Carta 2 venceu!\n");}
-
-                printf("Número de pontos turísticos 1 > Número de pontos turísticos 2: ");
+                
+                printf("populacao1 > populacao2:\n");
+                if (populacao1 > populacao2){
+                printf("Carta 1 venceu!\n");
+                }else {
+                printf("Carta 2 venceu!\n");
+                
+                printf("Número de pontos turísticos 1 > Número de pontos turísticos 2: \n");
                 if (numerodospontosturisticos1 > numerodospontosturisticos2) {
                 printf("Carta 1 venceu!\n");   
                 }else {
                 printf("Carta 2 venceu!\n");} 
-
-                printf("Pib da cidade 1 > Pib da cidade 2: ");
+                
+                printf("Pib da cidade 1 > Pib da cidade 2: \n");
                 if (pib1 > pib2) {
                 printf("Carta 1 venceu!\n");  
                 } else { 
