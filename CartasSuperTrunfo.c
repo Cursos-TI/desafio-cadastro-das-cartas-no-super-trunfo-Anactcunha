@@ -180,6 +180,6 @@ int main(){
                 printf("Carta 2 venceu!\n");}
 
 
-                
+
     return 0;
 }
