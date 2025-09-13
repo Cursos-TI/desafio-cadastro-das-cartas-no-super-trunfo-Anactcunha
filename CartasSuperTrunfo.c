@@ -126,7 +126,7 @@ int main(){
 
                  
                 printf("area1 > area2: %d\n", area1 > area2);
-                printf("populacao1 > populacao2: %lu\n", populacao1 > populacao2)? "Carta 1 venceu: Carta 2 venceu", (populacao1 > populacao2):
+                printf("populacao1 > populacao2: %d\n", populacao1 > populacao2);
                 printf("numerodospontosturisticos1 > numerodospontosturisticos2: %d\n", numerodospontosturisticos1 > numerodospontosturisticos2);
                 printf("pib1 > pib2: %d\n", pib1 > pib2);
                 printf("pib_per_capita1 > pib_per_capita2: %d\n", pib_per_capita1 >= pib_per_capita2);
@@ -143,43 +143,43 @@ int main(){
 
                 printf("---------------RESULTADO DA COMPARAÇÃO DAS CARTAS\n-------------");
                 // aqui a comparação das cartas irá gerar a mensagem que informa qual carta venceu
-                printf("Área 1 > Área 2: \n");
+                printf("Área:\n");
                 if (area1 > area2){
                 printf("Carta 1 venceu!\n");   
                 }else {  
                 printf("Carta 2 venceu!\n");}
                 
-                printf("populacao1 > populacao2:\n");
+                printf("populacao:\n");
                 if (populacao1 > populacao2){
-                printf("Carta 1 venceu!\n");
-                }else {
-                printf("Carta 2 venceu!\n");
+                printf("Carta 1 venceu!\n");   
+                }else {  
+                printf("Carta 2 venceu!\n");}
                 
-                printf("Número de pontos turísticos 1 > Número de pontos turísticos 2: \n");
+                printf("Número de pontos turísticos: \n");
                 if (numerodospontosturisticos1 > numerodospontosturisticos2) {
                 printf("Carta 1 venceu!\n");   
                 }else {
                 printf("Carta 2 venceu!\n");} 
                 
-                printf("Pib da cidade 1 > Pib da cidade 2: \n");
+                printf("Pib da cidade: \n");
                 if (pib1 > pib2) {
                 printf("Carta 1 venceu!\n");  
                 } else { 
                 printf("Carta 2 venceu!\n");}
 
-                printf("Pib per capita 1 > Pib per capita 2: ");
+                printf("Pib per capita: \n");
                 if (pib_per_capita1 > pib_per_capita2) {
                 printf("Carta 1 venceu!\n");   
                 } else {  
                 printf("Carta 2 venceu!\n");}
                 
-                printf("Densidade populacional 1 < Densidade populacional 2: ");
+                printf("Densidade populacional: ");
                 if (densidade_populacional1 < densidade_populacional2) {
                 printf("Carta 1 venceu!\n");   
                 } else {  
-                printf("Carta 2 venceu!\n");}
+                printf("Carta 2 venceu!\n");
+                }
 
-
-
-    return 0;
-}
+                return 0;
+                }
+// aqui a comparação das cartas irá gerar a mensagem que informa qual carta venceu
