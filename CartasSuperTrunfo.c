@@ -182,4 +182,3 @@ int main(){
 
                 return 0;
                 }
-// aqui a comparação das cartas irá gerar a mensagem que informa qual carta venceu
