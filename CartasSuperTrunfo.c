@@ -29,33 +29,71 @@ int main(){
                                             printf("Carta01 \n");
 
     printf("Digite o número da carta que pegou: \n");
-    scanf("%d", &numerodacarta1);
     // o usuário vai digitar o numero da carta que pegou
+    scanf("%d", &numerodacarta1);
+        if (numerodacarta1 > numerodacarta2) {
+        printf("Carta 1 venceu!\n");
+    } else {
+         printf("Carta 2 venceu!");
+        }
+        
     printf("Digite o nome do estado: \n");
     scanf ("%s", estado1);
     // o usuário digita o nome do estado que aparece na carta
     printf("Digite o nome da cidade: \n");
     scanf ("%s", cidade1);
     // o usuário digita o nome da cidade que aparece na carta
+
     printf("Digite a área da cidade em Km2: \n");
-    scanf ("%f", &area1);
     // usuário digita numero da área da cidade 
+    scanf ("%f", &area1);
+    if (area1 > area2) {
+        printf("Carta 1 venceu!\n");
+    } else {
+         printf("Carta 2 venceu!");
+        }
+    
     printf("Digite a população da cidade: \n");
-    scanf("%lu", &populacao1);
     // usuário digita a população da cidade
+    scanf("%lu", &populacao1);
+    if (populacao1 > populacao2) {
+        printf("Carta 1 venceu!\n");
+    } else {
+         printf("Carta 2 venceu!");
+        }
     printf("Digite o número de pontos turísticos: \n");
+     // o usuário vai digitar o numero de pontos turísticos
     scanf("%d", &numerodospontosturisticos1);
-    // o usuário vai digitar o numero de pontos turísticos
+   if (numerodospontosturisticos1 > numerodospontosturisticos2) {
+        printf("Carta 1 venceu!\n");
+    } else {
+         printf("Carta 2 venceu!");
+        }
     printf("Digite o pib da cidade: \n");
+      // o usuário vai digitar o pib da cidade
     scanf("%f", &pib1);
-    // o usuário vai digitar o pib da cidade
+   if (pib1 > pib2) {
+        printf("Carta 1 venceu!\n");
+    } else {
+         printf("Carta 2 venceu!");
+        }
 
     // cálculo pib per capita Carta 1
     pib_per_capita1 = (pib1 / populacao1);
     printf("O Pib per capita é: %.2f\n", pib_per_capita1);
+    if (pib_per_capita1 > pib_per_capita2) {
+        printf("Carta 1 venceu!\n");
+    } else {
+         printf("Carta 2 venceu!");
+        }
     //cálculo densidade populacional Carta 1
     densidade_populacional1 = (populacao1 / area1);
     printf("A densidade populacional é: %f\n", densidade_populacional1);
+    if (densidade_populacional1 < densidade_populacional2) {
+        printf("Carta 1 venceu!\n");
+    } else {
+         printf("Carta 2 venceu!");
+        }
 
 
                                     printf("-------CARTA 1 CADASTRADA-------\n");
@@ -122,7 +160,8 @@ int main(){
     printf("-------CARTA 2 APRESENTADA-------\n");
     printf("----------------\n");
 
-                                printf("COMPARAÇÃO DAS CARTAS CARTA 1 / CARTA 2\n");
+                                printf("COMPARAÇÃO DAS CARTAS2\n");
+                //comparação utilizando if / else;
 
                  
                 printf("area1 > area2: %d\n", area1 > area2);
