@@ -7,7 +7,7 @@ int main(){
         int numerodacarta1, numerodospontosturisticos1;
              float area1, pib1, densidade_populacional1, pib_per_capita1, super_Poder1;
                 unsigned long int populacao1; 
-                    char estado1[50], cidade1[50];  
+                    char estado1[50] = ("Paraná"), cidade1[50] = ("Londrina");  
                         area1 = 432;
                             populacao1 = 1830795000;
                                numerodospontosturisticos1 = 25;
@@ -31,11 +31,7 @@ int main(){
     printf("Digite o número da carta que pegou: \n");
     // o usuário vai digitar o numero da carta que pegou
     scanf("%d", &numerodacarta1);
-        if (numerodacarta1 > numerodacarta2) {
-        printf("Carta 1 venceu!\n");
-    } else {
-         printf("Carta 2 venceu!");
-        }
+        
         
     printf("Digite o nome do estado: \n");
     scanf ("%s", estado1);
@@ -47,11 +43,7 @@ int main(){
     printf("Digite a área da cidade em Km2: \n");
     // usuário digita numero da área da cidade 
     scanf ("%f", &area1);
-    if (area1 > area2) {
-        printf("Carta 1 venceu!\n");
-    } else {
-         printf("Carta 2 venceu!");
-        }
+   
     
     printf("Digite a população da cidade: \n");
     // usuário digita a população da cidade
@@ -59,7 +51,7 @@ int main(){
     if (populacao1 > populacao2) {
         printf("Carta 1 venceu!\n");
     } else {
-         printf("Carta 2 venceu!");
+         printf("Carta 2 venceu!\n");
         }
     printf("Digite o número de pontos turísticos: \n");
      // o usuário vai digitar o numero de pontos turísticos
@@ -67,7 +59,7 @@ int main(){
    if (numerodospontosturisticos1 > numerodospontosturisticos2) {
         printf("Carta 1 venceu!\n");
     } else {
-         printf("Carta 2 venceu!");
+         printf("Carta 2 venceu!\n");
         }
     printf("Digite o pib da cidade: \n");
       // o usuário vai digitar o pib da cidade
@@ -75,7 +67,7 @@ int main(){
    if (pib1 > pib2) {
         printf("Carta 1 venceu!\n");
     } else {
-         printf("Carta 2 venceu!");
+         printf("Carta 2 venceu!\n");
         }
 
     // cálculo pib per capita Carta 1
@@ -84,7 +76,7 @@ int main(){
     if (pib_per_capita1 > pib_per_capita2) {
         printf("Carta 1 venceu!\n");
     } else {
-         printf("Carta 2 venceu!");
+         printf("Carta 2 venceu!\n");
         }
     //cálculo densidade populacional Carta 1
     densidade_populacional1 = (populacao1 / area1);
@@ -92,7 +84,7 @@ int main(){
     if (densidade_populacional1 < densidade_populacional2) {
         printf("Carta 1 venceu!\n");
     } else {
-         printf("Carta 2 venceu!");
+         printf("Carta 2 venceu!\n");
         }
 
 
@@ -164,12 +156,17 @@ int main(){
                 //comparação utilizando if / else;
 
                  
-                printf("area1 > area2: %d\n", area1 > area2);
-                printf("populacao1 > populacao2: %d\n", populacao1 > populacao2);
-                printf("numerodospontosturisticos1 > numerodospontosturisticos2: %d\n", numerodospontosturisticos1 > numerodospontosturisticos2);
-                printf("pib1 > pib2: %d\n", pib1 > pib2);
-                printf("pib_per_capita1 > pib_per_capita2: %d\n", pib_per_capita1 >= pib_per_capita2);
-                printf("densidade_populacional1 < densidade_populacional2: %d\n", densidade_populacional1 <= densidade_populacional2);
+    printf("Area de Londrina > Area de Salvador: %d\n", area1 > area2);
+                 if (area1 > area2) {
+        printf("Carta 1 venceu!\n");
+    } else {
+         printf("Carta 2 venceu!\n");
+        }
+                printf("populacao de Londrina > populacao de Salvador: %d\n", populacao1 > populacao2);
+                printf("Pontos turísticos de Londrina > pontosturisticos de Salvador: %d\n", numerodospontosturisticos1 > numerodospontosturisticos2);
+                printf("Pib Londrina > Pib Salvador: %d\n", pib1 > pib2);
+                printf("pib_per_capita  Londrina > pib_per_capita Salvador: %d\n", pib_per_capita1 >= pib_per_capita2);
+                printf("densidade_populacional  Londrina < densidade_populacional Salvador: %d\n", densidade_populacional1 <= densidade_populacional2);
 
                 printf("COMPARAÇÃO DAS CARTAS CARTA 2 / CARTA 1\n");
 
