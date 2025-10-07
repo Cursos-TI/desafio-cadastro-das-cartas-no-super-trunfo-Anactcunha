@@ -62,7 +62,7 @@ int main(){
             break;
             
             case 3:
-            // temos somente apresentação sem comparação dos aatributos.
+            // temos somente apresentação sem comparação dos atributos.
             printf("Apresentar nome da cidade e estado\n");
             printf("Carta 1: %s - %s\n", estado1, cidade1);
             printf("Carta 2: %s - %s\n", estado2, cidade2);
