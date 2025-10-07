@@ -1,8 +1,5 @@
 #include <stdio.h>
-
-
-
-int main(){
+    int main(){
 
 // variáveis carta 1 (as mesmas variáveis foram usadas no nível iniciante e intermediário.) 
         int numerodacarta1 = 57, area1 = 432, numerodospontosturisticos1 = 25, opcao;
