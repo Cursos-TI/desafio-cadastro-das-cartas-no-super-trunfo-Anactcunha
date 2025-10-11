@@ -1,0 +1,1 @@
+float pib1 = 230060000.000, densidade_populacional1, pib_per_capita1;

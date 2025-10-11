@@ -137,16 +137,54 @@ int main(){
                 printf("Resultado: Carta 1 (Londrina) venceu!\n");   
                 }else {  
                 printf("Resultado: Carta 2 (Salvador) venceu!\n");}
+=======
+    printf("carta1:\n");
+    //apresentação da carta
+    printf("Estado: %s.\n", estado1);
+    // dados inseridos sobre o nome do estado que consta na carta
+    printf("Cidade: %s.\n", cidade1);
+    // dados inseridos sobre o nome da cidade que consta na carta
+    printf("Área: %f.\n", area1);
+    // dados inseridos sobre a área da cidade que consta na carta
+    printf("População: %f.\n", populacao1);
+    // dados inseridos sobre a população da cidade que consta na carta
+    printf("Número dos pontos turísticos: %d.\n", numerodospontosturisticos1);
+    // dados inseridos sobre o número de pontos turísticos que consta na carta
+    printf("Pib: %f.\n", pib1);
+    // dados inseridos sobre o pib da cidade que consta na carta
+    pib_per_capita1 = (float)(pib1 / populacao1);
+    printf("O Pib per capita é: %f \n", pib_per_capita1);
+    densidade_populacional1 = (float)(populacao1 / area1);
+    printf("A densidade populacional é: %f \n", densidade_populacional1);
+    printf("super_poder_carta1 = area1 + populacao1 + numerodospontosturisticos1 + pib1 + pib_per_capita1 + (1.0 / densidade_populacional1");
+>>>>>>> Stashed changes
 
 
     printf("Comparação de cartas (Atributo: Pib per capita)\n");
 
+<<<<<<< Updated upstream
     printf("Carta 1 - Londrina: %.2f\n", pib_per_capita1);
     printf("Carta 2 - Salvador: %.2f\n", pib_per_capita2);
     if (pib_per_capita1 > pib_per_capita2){
                 printf("Resultado: Carta 1 (Londrina) venceu!\n");   
                 }else {  
                 printf("Resultado: Carta 2 (Salvador) venceu!\n");}
+=======
+printf("############-\n");
+    
+    printf("carta2:\n");
+    printf("Estado: %s.\n", estado2);
+    printf("Cidade: %s.\n", cidade2);
+    printf("Área: %f.\n", area2);
+    printf("População: %.f.\n", populacao2);
+    printf("Número dos pontos turísticos: %d.\n", numerodospontosturisticos2);
+    printf("Pib: %f.\n", pib2);
+    pib_per_capita2 = (float)(pib2 / populacao2);
+    printf("O Pib per capita é: %f \n", pib_per_capita2);
+    densidade_populacional2 = (float)(populacao2 / area2);
+    printf("A densidade populacional é: %f \n", densidade_populacional2);
+    printf("super_poder_carta2 = area2 + populacao2 + numerodospontosturisticos2 + pib2 + pib_per_capita2 + (1.0 / densidade_populacional2);");
+>>>>>>> Stashed changes
 
     printf("Comparação de cartas (Atributo: Densidade populacional)\n");
 
@@ -175,7 +213,22 @@ int main(){
                         scanf("%d",&opcao);
  
 
+<<<<<<< Updated upstream
        
 
                 return 0;
                 }
+=======
+                printf("area1 >= area2: %d\n", area1 >= area2);
+                printf("populacao1 >= populacao2: %f\n", populacao1 >= populacao2);
+                printf("numerodospontosturisticos1 >= numerodospontosturisticos2: %d\n", numerodospontosturisticos1 >= numerodospontosturisticos2);
+                printf("pib1 >= pib2: %f\n", pib1 >= pib2);
+                printf("pib_per_capita1 >= pib_per_capita2: %f\n", pib_per_capita1 >= pib_per_capita2);
+                printf("densidade_populacional1 >= densidade_populacional2: %f\n", densidade_populacional1 >= densidade_populacional2);
+                printf("O super Poder da carta 01 é: %.2f\n", super_Poder1);
+                printf("O super poder da carta 02 é: %.2f\n", super_Poder2);
+                
+                
+    return 0;
+}
+>>>>>>> Stashed changes
