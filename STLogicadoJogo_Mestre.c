@@ -3,10 +3,9 @@
 
 
 int main() {
-    int numeroJogador, numeroComputador, escolha1, escolha2, tipoComparacao;
+    int escolha1, escolha2, tipoComparacao;
     int resultado;
-    int cartaComputador;
-
+    
 // Dados das cartas (usando variaveis individuais para a comparação)
     int numerodacarta1 = 57;
     int numerodacarta2 = 37;
@@ -19,18 +18,21 @@ int main() {
 
     // variáveis carta 1 e 2 (as mesmas variáveis foram usadas no nível iniciante e intermediário.).
 
-// realização do desafio em desenvolvendo a lógica do jogo nível mestre
+// realização do desafio em "desenvolvendo a lógica do jogo nível mestre"
                         printf("MENU INTERATIVO\n");
 /* Criação do menu interativo com a escolha de duas opções, o uso so switch foi a proposta da atividade com o objetivo de apresentar os atributos de carta que cada jogador tem para que seja feita a comparação*/
                         
 //inicio do jogo
         printf("Bem-vindo ao jogo Super Trunfo nível Mestre!\n");
-                        // itens para escolha dos jogadores
+
+                        printf("****Regras do jogo****");   
         printf("Sempre que uma opção for escolhida, os atributos serão comparados entre as cartas dos dois jogadores, o jogador com o maior valor de atributo escolhido vence a rodada, exeto na densidade populacional, que vencerá quem tiver o menor valor.\n");
+        
+        // itens para escolha dos jogadores
         
         printf("Escolha um atributo para comparação.\n");
                         
-            //neste caso temos a apresentação com comparação de atributos.
+        //neste caso temos a apresentação com comparação de atributos.
          
         printf("1. Numero da carta:\n");
         printf("2. Populacao:\n");
