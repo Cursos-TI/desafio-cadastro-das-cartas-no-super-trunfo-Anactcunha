@@ -87,3 +87,8 @@ int main() {
 
     return 0;
 }
+
+
+printf("3. numero de pontos turisticos\n");
+        printf("%d\n", numerodepontosturisticos1);
+        printf("numero da carta do computador:\n","%d\n", numerodepontosturisticos2);

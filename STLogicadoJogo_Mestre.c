@@ -22,6 +22,14 @@ int main() {
 //gerar número aleatório pois a comparação será entre carta escolhida pelo jogador e carta do computador
     srand(time(0));
     cartaComputador = rand() %2; //para que o computador escolha entre a carta 1 e a carta2
+if (cartaComputador == 0) {
+    printf("A carta do jogador é a de numero %d.\n", numeroJogador);
+    printf("A carta do computador é a de numero %d.\n", numeroComputador);
+} else {
+    // Se o computador escolheu 1, ele fica com a Carta 2
+    printf("A carta do jogador é a de numero %d.\n", numeroJogador);
+    printf("A carta do computador é a de numero %d.\n", numeroComputador);
+}
 
 // realização do desafio em desenvolvendo a lógica do jogo nível mestre
                         printf("MENU INTERATIVO\n");
@@ -41,31 +49,50 @@ int main() {
         printf("3. Numero de pontos turisticos:\n");
         printf("Escolha a primeira opção:\n");
         scanf("%d", &escolha1);  // irá apresentar o número da opção escolhida
-        printf("Escolha a segunda opção:\n"); // idem primeira opção
-        scanf("%d", &escolha2); // idem primeira opção
-            
+                    
         if (escolha1 == 1) {
         printf("1. numero da carta:\n");
-        printf("%d\n", numerodacarta1); 
-        printf("numero da carta do computador:\n", "%d\n", numerodacarta2);
-        printf("3. numero de pontos turisticos\n");
-        printf("%d\n", numerodepontosturisticos1);
-        printf("numero da carta do computador:\n","%d\n", numerodepontosturisticos2);
-
+        printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodacarta1); 
+        printf("O computador escolheu a carta 2! O número dela é: ""%d\n", numerodacarta2);
+        
         } else if (escolha1 == 2) {
-        printf("2. População\n");
-        printf("%lu\n", populacao1);
-        printf("numero da carta do computador:\n", "%lu\n", populacao2);
+        printf("2. População: ");
+        printf("Você escolheu a carta 1! O número dela é: ""%lu\n", populacao1);
+        printf("O computador escolheu a carta 2! O número dela é: " "%lu\n", populacao2);
         printf("3. Numero de pontos turísticos\n");
-        printf("%d\n", numerodepontosturisticos1);
-        printf("numero da carta do computador:\n", "%d\n", numerodepontosturisticos2);
+        printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodepontosturisticos1);
+        printf("O computador escolheu a carta 2! O número dela é: " "%d\n", numerodepontosturisticos2);
         } else if (escolha1 == 3) {
         printf("1. numero da carta\n");
-        printf("%d\n", numerodacarta1);
-        printf("numero da carta do computador:\n", "%d\n", numerodacarta2);
+        printf("Você escolheu a carta 1! O número dela é: " "%d\n", numerodacarta1);
+        printf("O computador escolheu a carta 2! O número dela é: " "%d\n", numerodacarta2);
         printf("2. população\n");
-        printf("%lu\n", populacao1);
-        printf("numero da carta do computador:\n", "%lu\n", populacao2);
+        printf("Você escolheu a carta 1! O número dela é: " "%lu\n", populacao1);
+        printf("O computador escolheu a carta 2! O número dela é: " "%lu\n", populacao2);
+
+        printf("Escolha a segunda opção:\n"); // idem primeira opção
+        scanf("%d", &escolha2); // idem primeira opção
+
+        if (escolha1 == 1) {
+        printf("1. numero da carta:\n");
+        printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodacarta1); 
+        printf("O computador escolheu a carta 2! O número dela é: ""%d\n", numerodacarta2);
+        
+        } else if (escolha1 == 2) {
+        printf("2. População: ");
+        printf("Você escolheu a carta 1! O número dela é: ""%lu\n", populacao1);
+        printf("O computador escolheu a carta 2! O número dela é: " "%lu\n", populacao2);
+        printf("3. Numero de pontos turísticos\n");
+        printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodepontosturisticos1);
+        printf("O computador escolheu a carta 2! O número dela é: " "%d\n", numerodepontosturisticos2);
+        } else if (escolha1 == 3) {
+        printf("1. numero da carta\n");
+        printf("Você escolheu a carta 1! O número dela é: " "%d\n", numerodacarta1);
+        printf("O computador escolheu a carta 2! O número dela é: " "%d\n", numerodacarta2);
+        printf("2. população\n");
+        printf("Você escolheu a carta 1! O número dela é: " "%lu\n", populacao1);
+        printf("O computador escolheu a carta 2! O número dela é: " "%lu\n", populacao2);
+
         }
                         
                         
@@ -115,7 +142,7 @@ int main() {
             printf("Opção inválida. Tente novamente.\n");
             break;
              }
-            printf("O número do computador é: %d e o numero do jogador é: %d\n", numeroComputador, numeroJogador);
+            
 
             if (resultado == 1)
             {
@@ -124,5 +151,5 @@ int main() {
             printf("Infelizmente, você perdeu!\n");
             }
             return 0;
-            }    
-        
+         }    
+}
