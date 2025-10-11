@@ -43,29 +43,30 @@ int main() {
         scanf("%d", &escolha1);  // irá apresentar o número da opção escolhida
         printf("Escolha a segunda opção:\n"); // idem primeira opção
         scanf("%d", &escolha2); // idem primeira opção
-            if (escolha1 == 1) {
-                printf("1. numero da carta:\n");
-                printf("%d\n", numerodacarta1); 
-                printf("numero da carta do computador:\n", "%d\n", numerodacarta2);
-                printf("3. numero de pontos turisticos\n");
-                printf("%d\n", numerodepontosturisticos1);
-                printf("numero da carta do computador:\n","%d\n", numerodepontosturisticos2);
+            
+        if (escolha1 == 1) {
+        printf("1. numero da carta:\n");
+        printf("%d\n", numerodacarta1); 
+        printf("numero da carta do computador:\n", "%d\n", numerodacarta2);
+        printf("3. numero de pontos turisticos\n");
+        printf("%d\n", numerodepontosturisticos1);
+        printf("numero da carta do computador:\n","%d\n", numerodepontosturisticos2);
 
-            } else if (escolha1 == 2) {
-                printf("2. População\n");
-                printf("%lu\n", populacao1);
-                printf("numero da carta do computador:\n", "%lu\n", populacao2);
-                printf("3. Numero de pontos turísticos\n");
-                printf("%d\n", numerodepontosturisticos1);
-                printf("numero da carta do computador:\n", "%d\n", numerodepontosturisticos2);
-            } else if (escolha1 == 3) {
-                printf("1. numero da carta\n");
-                printf("%d\n", numerodacarta1);
-                printf("numero da carta do computador:\n", "%d\n", numerodacarta2);
-                printf("2. população\n");
-                printf("%lu\n", populacao1);
-                printf("numero da carta do computador:\n", "%lu\n", populacao2);
-            }
+        } else if (escolha1 == 2) {
+        printf("2. População\n");
+        printf("%lu\n", populacao1);
+        printf("numero da carta do computador:\n", "%lu\n", populacao2);
+        printf("3. Numero de pontos turísticos\n");
+        printf("%d\n", numerodepontosturisticos1);
+        printf("numero da carta do computador:\n", "%d\n", numerodepontosturisticos2);
+        } else if (escolha1 == 3) {
+        printf("1. numero da carta\n");
+        printf("%d\n", numerodacarta1);
+        printf("numero da carta do computador:\n", "%d\n", numerodacarta2);
+        printf("2. população\n");
+        printf("%lu\n", populacao1);
+        printf("numero da carta do computador:\n", "%lu\n", populacao2);
+        }
                         
                         
             switch (tipoComparacao)
