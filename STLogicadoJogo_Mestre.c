@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+
 
 int main() {
     int numeroJogador, numeroComputador, escolha1, escolha2, tipoComparacao;
@@ -17,19 +17,7 @@ int main() {
     int numerodepontosturisticos1 = 25;
     int numerodepontosturisticos2 = 103;
 
-    // variáveis carta 1 e 2 (as mesmas variáveis foram usadas no nível iniciante e intermediário.) 
-
-//gerar número aleatório pois a comparação será entre carta escolhida pelo jogador e carta do computador
-    srand(time(0));
-    cartaComputador = rand() %2; //para que o computador escolha entre a carta 1 e a carta2
-if (cartaComputador == 0) {
-    printf("A carta do jogador é a de numero %d.\n", numeroJogador);
-    printf("A carta do computador é a de numero %d.\n", numeroComputador);
-} else {
-    // Se o computador escolheu 1, ele fica com a Carta 2
-    printf("A carta do jogador é a de numero %d.\n", numeroJogador);
-    printf("A carta do computador é a de numero %d.\n", numeroComputador);
-}
+    // variáveis carta 1 e 2 (as mesmas variáveis foram usadas no nível iniciante e intermediário.).
 
 // realização do desafio em desenvolvendo a lógica do jogo nível mestre
                         printf("MENU INTERATIVO\n");
