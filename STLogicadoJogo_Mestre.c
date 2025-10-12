@@ -3,10 +3,10 @@
 
 
 int main() {
-    
+
     int escolha, resultado;
     
-// Dados das cartas (usando variaveis individuais para a comparação)
+// Dados das cartas (usando variaveis individuais para a comparação), as mesmas variáveis foram usadas no nível iniciante e intermediário.
     int numerodacarta1 = 57;
     int numerodacarta2 = 37;
 
@@ -16,7 +16,7 @@ int main() {
     int numerodepontosturisticos1 = 25;
     int numerodepontosturisticos2 = 103;
 
-    // variáveis carta 1 e 2 (as mesmas variáveis foram usadas no nível iniciante e intermediário.).
+   
 
 // realização do desafio em "desenvolvendo a lógica do jogo nível mestre"
                         printf("MENU INTERATIVO\n");
@@ -29,17 +29,17 @@ int main() {
         
         // itens para escolha dos jogadores
         
-        printf("Escolha um atributo para comparação.\n");
+        printf("Você escolherá 2 atributos para comparação.\n");
                         
         //neste caso temos a apresentação com comparação de atributos.
-         
+        printf("Escolha a primeira opção:\n"); 
         printf("1. Numero da carta:\n");
         printf("2. Populacao:\n");
         printf("3. Numero de pontos turisticos:\n");
-        printf("Escolha a primeira opção:\n");
-        scanf("%d", &escolha1);  // irá apresentar o número da opção escolhida
-        printf("Escolha a segunda opção:\n"); // idem primeira opção
-        scanf("%d", &escolha2); // idem primeira opção
+        printf("Digite sua escolha:\n");
+        scanf("%d", &escolha);  // irá apresentar o número da opção escolhida
+        //optei por separar as escolhas pra que o código rode em blocos (1 e 2 escolha)
+        
         
     
 
