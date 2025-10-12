@@ -133,6 +133,7 @@ int main() {
     
     return 0;
 }
-
+//printf("Escolha a segunda opção:\n"); // idem primeira opção
+        //scanf("%d", &escolha2); // idem primeira opção
 /*printf("****Regras do jogo****\n");   
         printf("Sempre que uma opção for escolhida, os atributos serão comparados entre as cartas dos dois jogadores, o jogador com o maior valor de atributo escolhido vence a rodada, exeto na densidade populacional, que vencerá quem tiver o menor valor.\n");*/
