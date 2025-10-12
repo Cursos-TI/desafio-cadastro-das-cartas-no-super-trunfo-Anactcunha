@@ -4,7 +4,7 @@
 
 int main() {
 
-    int escolha, resultado;
+    int escolha1, escolha2, resultado;
     
 // Dados das cartas (usando variaveis individuais para a comparação), as mesmas variáveis foram usadas no nível iniciante e intermediário.
     int numerodacarta1 = 57;
@@ -32,15 +32,17 @@ int main() {
         printf("Você escolherá 2 atributos para comparação.\n");
                         
         //neste caso temos a apresentação com comparação de atributos.
-        printf("Escolha a primeira opção:\n"); 
+        printf("Opções para escolha:\n"); 
         printf("1. Numero da carta:\n");
         printf("2. Populacao:\n");
         printf("3. Numero de pontos turisticos:\n");
-        printf("Digite sua escolha:\n");
-        scanf("%d", &escolha);  // irá apresentar o número da opção escolhida
+        printf("Digite sua primeira escolha:\n");
+        scanf("%d", &escolha1);
+        printf("Digite sua segunda escolha:\n");
+        scanf("%d", &escolha2);  // irá apresentar o número da opção escolhida
         //optei por separar as escolhas pra que o código rode em blocos (1 e 2 escolha)
         
-        switch (escolha) {
+        switch (escolha1) {
     
         case 1: //organizando os cases para que não fiquem repetidos e confusos, sempre após o resultado da escolha do jogador será apresentado a "escolha do computador".
         
@@ -88,17 +90,55 @@ int main() {
             default: // caso o jogoador insira uma opção que não tenha sido listada no menu.
             printf("Opção inválida. Tente novamente.\n");
             break;
-
+        }
+// aqui começa o segundo bloco com a escolha, apresentação e comparação das opções
+    
+        switch (escolha2) { 
+    
+        case 1: 
         
-            
-             }
-            
+        printf("1. numero da carta:\n");
+        printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodacarta1); 
+        printf("O computador escolheu a carta 2! O número dela é: ""%d\n", numerodacarta2);
+        resultado = numerodacarta1 > numerodacarta2 ? 1 : 0;
+        if (numerodacarta1 == numerodacarta2) {
+            printf("As cartas empataram!\n");
+        } else if (resultado == 1) {
+            printf("A carta 1 é o numero maior e venceu a rodada!\n");
+        } else {
+            printf("A carta 2 é o numero maior e venceu a rodada!\n");
+        }
+        break;
 
-            if (resultado == 1)
-            {
-            printf("Parabéns, você venceu!\n");
+        case 2:
+        printf("2. população:\n");
+        printf("Você escolheu a carta 1! O número dela é: ""%lu\n", numerodacarta1); 
+        printf("O computador escolheu a carta 2! O número dela é: ""%lu\n", numerodacarta2);
+        resultado = numerodacarta1 > numerodacarta2 ? 1 : 0;
+            if (numerodacarta1 == numerodacarta2) {
+                printf("As cartas empataram!\n");
+            } else if (resultado == 1) {
+                printf("Carta 1 é o numero maior e venceu a rodada!\n");
             } else {
-            printf("Infelizmente, você perdeu!\n");
+                printf("Carta 2 é o numero maior e venceu a rodada!\n");
             }
-            return 0;
-         }
+            break;
+
+        case 3:
+
+        printf("3. numero de pontos turísticos:\n");
+        printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodacarta1); 
+        printf("O computador escolheu a carta 2! O número dela é: ""%d\n", numerodacarta2);
+        resultado = numerodacarta1 > numerodacarta2 ? 1 : 0;
+            if (numerodacarta1 == numerodacarta2) {
+                printf("As cartas empataram!\n");
+            } else if (resultado == 1) {
+                printf("Carta 1 é o numero maior e venceu a rodada!\n");
+            } else {
+                printf("Carta 2 é o numero maior e venceu a rodada!\n");
+            }
+            break;
+
+            }
+             return 0;
+        }
