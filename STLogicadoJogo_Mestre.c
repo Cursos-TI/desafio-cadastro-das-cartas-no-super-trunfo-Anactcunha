@@ -3,8 +3,8 @@
 
 
 int main() {
-    int escolha1, escolha2, tipoComparacao;
-    int resultado;
+    
+    int escolha, resultado;
     
 // Dados das cartas (usando variaveis individuais para a comparação)
     int numerodacarta1 = 57;
@@ -25,8 +25,7 @@ int main() {
 //inicio do jogo
         printf("Bem-vindo ao jogo Super Trunfo nível Mestre!\n");
 
-                        printf("****Regras do jogo****");   
-        printf("Sempre que uma opção for escolhida, os atributos serão comparados entre as cartas dos dois jogadores, o jogador com o maior valor de atributo escolhido vence a rodada, exeto na densidade populacional, que vencerá quem tiver o menor valor.\n");
+                        
         
         // itens para escolha dos jogadores
         
@@ -39,34 +38,18 @@ int main() {
         printf("3. Numero de pontos turisticos:\n");
         printf("Escolha a primeira opção:\n");
         scanf("%d", &escolha1);  // irá apresentar o número da opção escolhida
-                    
-        if (escolha1 == 1) {
-        printf("1. numero da carta:\n");
-        printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodacarta1); 
-        printf("O computador escolheu a carta 2! O número dela é: ""%d\n", numerodacarta2);
-        
-        } else if (escolha1 == 2) {
-        printf("2. População: ");
-        printf("Você escolheu a carta 1! O número dela é: ""%lu\n", populacao1);
-        printf("O computador escolheu a carta 2! O número dela é: " "%lu\n", populacao2);
-        printf("3. Numero de pontos turísticos\n");
-        printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodepontosturisticos1);
-        printf("O computador escolheu a carta 2! O número dela é: " "%d\n", numerodepontosturisticos2);
-        } else if (escolha1 == 3) {
-        printf("1. numero da carta\n");
-        printf("Você escolheu a carta 1! O número dela é: " "%d\n", numerodacarta1);
-        printf("O computador escolheu a carta 2! O número dela é: " "%d\n", numerodacarta2);
-        printf("2. população\n");
-        printf("Você escolheu a carta 1! O número dela é: " "%lu\n", populacao1);
-        printf("O computador escolheu a carta 2! O número dela é: " "%lu\n", populacao2);
-
         printf("Escolha a segunda opção:\n"); // idem primeira opção
         scanf("%d", &escolha2); // idem primeira opção
+        
+    
 
         if (escolha1 == 1) {
         printf("1. numero da carta:\n");
         printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodacarta1); 
         printf("O computador escolheu a carta 2! O número dela é: ""%d\n", numerodacarta2);
+        printf("3. Numero de pontos turísticos\n");
+        printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodepontosturisticos1);
+        printf("O computador escolheu a carta 2! O número dela é: " "%d\n", numerodepontosturisticos2);
         
         } else if (escolha1 == 2) {
         printf("2. População: ");
@@ -75,6 +58,7 @@ int main() {
         printf("3. Numero de pontos turísticos\n");
         printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodepontosturisticos1);
         printf("O computador escolheu a carta 2! O número dela é: " "%d\n", numerodepontosturisticos2);
+        
         } else if (escolha1 == 3) {
         printf("1. numero da carta\n");
         printf("Você escolheu a carta 1! O número dela é: " "%d\n", numerodacarta1);
@@ -82,11 +66,34 @@ int main() {
         printf("2. população\n");
         printf("Você escolheu a carta 1! O número dela é: " "%lu\n", populacao1);
         printf("O computador escolheu a carta 2! O número dela é: " "%lu\n", populacao2);
-
         }
-                        
-                        
-            switch (tipoComparacao)
+
+         if (escolha2 == 1) {
+        printf("1. numero da carta:\n");
+        printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodacarta1); 
+        printf("O computador escolheu a carta 2! O número dela é: ""%d\n", numerodacarta2);
+        printf("3. Numero de pontos turísticos\n");
+        printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodepontosturisticos1);
+        printf("O computador escolheu a carta 2! O número dela é: " "%d\n", numerodepontosturisticos2);
+        
+        } else if (escolha2 == 2) {
+        printf("2. População: ");
+        printf("Você escolheu a carta 1! O número dela é: ""%lu\n", populacao1);
+        printf("O computador escolheu a carta 2! O número dela é: " "%lu\n", populacao2);
+        printf("3. Numero de pontos turísticos\n");
+        printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodepontosturisticos1);
+        printf("O computador escolheu a carta 2! O número dela é: " "%d\n", numerodepontosturisticos2);
+        
+        } else if (escolha2 == 3) {
+        printf("1. numero da carta\n");
+        printf("Você escolheu a carta 1! O número dela é: " "%d\n", numerodacarta1);
+        printf("O computador escolheu a carta 2! O número dela é: " "%d\n", numerodacarta2);
+        printf("2. população\n");
+        printf("Você escolheu a carta 1! O número dela é: " "%lu\n", populacao1);
+        printf("O computador escolheu a carta 2! O número dela é: " "%lu\n", populacao2);
+        }
+
+        switch (tipoComparacao)
             {
                   
             case 1:
@@ -141,5 +148,4 @@ int main() {
             printf("Infelizmente, você perdeu!\n");
             }
             return 0;
-         }    
-}
+         }
