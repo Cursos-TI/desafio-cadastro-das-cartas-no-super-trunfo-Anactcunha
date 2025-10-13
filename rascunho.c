@@ -3,10 +3,11 @@
 
 
 int main() {
-
-    int escolha1, escolha2, resultado;
+    int escolha1, escolha2;
+    long long soma1 = 0; // Usando long long para garantir que a soma não estoure
+    long long soma2 = 0;
     
-// Dados das cartas (usando variaveis individuais para a comparação), as mesmas variáveis foram usadas no nível iniciante e intermediário.
+// Dados das cartas (usando variaveis individuais para a comparação)
     int numerodacarta1 = 57;
     int numerodacarta2 = 37;
 
@@ -16,134 +17,84 @@ int main() {
     int numerodepontosturisticos1 = 25;
     int numerodepontosturisticos2 = 103;
 
+    printf("Bem-vindo ao jogo Super Trunfo!\n");
+    printf("Você escolherá 2 atributos para somar os valores e depois comparar as somas.\n");
     
-
-// realização do desafio em "desenvolvendo a lógica do jogo nível mestre"
-                         printf("MENU INTERATIVO\n");
-/* Criação do menu interativo com a escolha de duas opções, o uso so switch foi a proposta da atividade com o objetivo de apresentar os atributos de carta que cada jogador tem para que seja feita a comparação*/
-                        
-//inicio do jogo
-        printf("Bem-vindo ao jogo Super Trunfo nível Mestre!\n");
-
-                        
-        
-        // itens para escolha dos jogadores
-        
-        printf("Você escolherá 2 atributos para comparação.\n");
-                        
-        //neste caso temos a apresentação com comparação de atributos.
-        printf("Opções para escolha:\n"); 
-        printf("1. Numero da carta:\n");
-        printf("2. Populacao:\n");
-        printf("3. Numero de pontos turisticos:\n");
-        printf("Digite sua primeira escolha:\n");
-        scanf("%d", &escolha1);
-        printf("Digite sua segunda escolha:\n");
-        scanf("%d", &escolha2);  // Agora usa uma variável diferente para a segunda escolha
-        //optei por separar as escolhas pra que o código rode em blocos (1 e 2 escolha)
-        
-        switch (escolha1) { // Usa a primeira escolha para o primeiro bloco
+    // Primeira escolha
+    printf("\n--- Primeira Escolha ---\n");
+    printf("Opções para escolha:\n");
+    printf("1. Numero da carta:\n");
+    printf("2. Populacao:\n");
+    printf("3. Numero de pontos turisticos:\n");
+    printf("Digite sua primeira escolha: ");
+    scanf("%d", &escolha1);
     
-        case 1: //organizando os cases para que não fiquem repetidos e confusos, sempre após o resultado da escolha do jogador será apresentado a "escolha do computador".
-        
-        printf("1. numero da carta:\n");
-        printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodacarta1); 
-        printf("O computador escolheu a carta 2! O número dela é: ""%d\n", numerodacarta2);
-        resultado = numerodacarta1 > numerodacarta2 ? 1 : 0;
-        if (numerodacarta1 == numerodacarta2) {
-            printf("As cartas empataram!\n");
-        } else if (resultado == 1) {
-            printf("A carta 1 é o numero maior e venceu a rodada!\n");
-        } else {
-            printf("A carta 2 é o numero maior e venceu a rodada!\n");
-        }
-        break;
-
+    switch (escolha1) {
+        case 1:
+            printf("\nOpcao escolhida: Numero da carta\n");
+            soma1 = (long long)numerodacarta1 + numerodacarta2;
+            printf("A soma dos numeros das cartas eh: %lld\n", soma1);
+            break;
+            
         case 2:
-        printf("2. população:\n");
-        printf("Você escolheu a carta 1! O número dela é: ""%lu\n", populacao1); 
-        printf("O computador escolheu a carta 2! O número dela é: ""%lu\n", populacao2);
-        resultado = populacao1 > populacao2 ? 1 : 0;
-            if (populacao1 == populacao2) {
-                printf("As cartas empataram!\n");
-            } else if (resultado == 1) {
-                printf("Carta 1 é o numero maior e venceu a rodada!\n");
-            } else {
-                printf("Carta 2 é o numero maior e venceu a rodada!\n");
-            }
+            printf("\nOpcao escolhida: Populacao\n");
+            soma1 = (long long)populacao1 + populacao2;
+            printf("A soma das populacoes eh: %lld\n", soma1);
             break;
+            
         case 3:
-
-        printf("3. numero de pontos turísticos:\n");
-        printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodacarta1); 
-        printf("O computador escolheu a carta 2! O número dela é: ""%d\n", numerodacarta2);
-        resultado = numerodepontosturisticos1 > numerodepontosturisticos2 ? 1 : 0;
-            if (numerodepontosturisticos1 == numerodepontosturisticos2) {
-                printf("As cartas empataram!\n");
-            } else if (resultado == 1) {
-                printf("Carta 1 é o numero maior e venceu a rodada!\n");
-            } else {
-                printf("Carta 2 é o numero maior e venceu a rodada!\n");
-            }
+            printf("\nOpcao escolhida: Numero de pontos turisticos\n");
+            soma1 = (long long)numerodepontosturisticos1 + numerodepontosturisticos2;
+            printf("A soma dos pontos turisticos eh: %lld\n", soma1);
             break;
-
-            default: // caso o jogoador insira uma opção que não tenha sido listada no menu.
-            printf("Opção inválida. Tente novamente.\n");
+            
+        default:
+            printf("\nOpcao invalida. A primeira soma sera 0.\n");
             break;
-        }
-
-// aqui começa o segundo bloco com a escolha, apresentação e comparação das opções
-        
-        switch (escolha2) { // Usa a segunda escolha para o segundo bloco
+    }
     
-        case 1: 
-        
-        printf("\n1. numero da carta:\n");
-        printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodacarta1); 
-        printf("O computador escolheu a carta 2! O número dela é: ""%d\n", numerodacarta2);
-        resultado = numerodacarta1 > numerodacarta2 ? 1 : 0;
-        if (numerodacarta1 == numerodacarta2) {
-            printf("As cartas empataram!\n");
-        } else if (resultado == 1) {
-            printf("A carta 1 é o numero maior e venceu a rodada!\n");
-        } else {
-            printf("A carta 2 é o numero maior e venceu a rodada!\n");
-        }
-        break;
-
+    // Segunda escolha
+    printf("\n--- Segunda Escolha ---\n");
+    printf("Opções para escolha:\n");
+    printf("1. Numero da carta:\n");
+    printf("2. Populacao:\n");
+    printf("3. Numero de pontos turisticos:\n");
+    printf("Digite sua segunda escolha: ");
+    scanf("%d", &escolha2);
+    
+    switch (escolha2) {
+        case 1:
+            printf("\nOpcao escolhida: Numero da carta\n");
+            soma2 = (long long)numerodacarta1 + numerodacarta2;
+            printf("A soma dos numeros das cartas eh: %lld\n", soma2);
+            break;
+            
         case 2:
-        printf("\n2. população:\n");
-        printf("Você escolheu a carta 1! O número dela é: ""%lu\n", populacao1); 
-        printf("O computador escolheu a carta 2! O número dela é: ""%lu\n", populacao2);
-        resultado = populacao1 > populacao2 ? 1 : 0;
-            if (populacao1 == populacao2) {
-                printf("As cartas empataram!\n");
-            } else if (resultado == 1) {
-                printf("Carta 1 é o numero maior e venceu a rodada!\n");
-            } else {
-                printf("Carta 2 é o numero maior e venceu a rodada!\n");
-            }
+            printf("\nOpcao escolhida: Populacao\n");
+            soma2 = (long long)populacao1 + populacao2;
+            printf("A soma das populacoes eh: %lld\n", soma2);
             break;
-
+            
         case 3:
-
-        printf("\n3. numero de pontos turísticos:\n");
-        printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodacarta1); 
-        printf("O computador escolheu a carta 2! O número dela é: ""%d\n", numerodacarta2);
-        resultado = numerodepontosturisticos1 > numerodepontosturisticos2 ? 1 : 0;
-            if (numerodepontosturisticos1 == numerodepontosturisticos2) {
-                printf("As cartas empataram!\n");
-            } else if (resultado == 1) {
-                printf("Carta 1 é o numero maior e venceu a rodada!\n");
-            } else {
-                printf("Carta 2 é o numero maior e venceu a rodada!\n");
-            }
+            printf("\nOpcao escolhida: Numero de pontos turisticos\n");
+            soma2 = (long long)numerodepontosturisticos1 + numerodepontosturisticos2;
+            printf("A soma dos pontos turisticos eh: %lld\n", soma2);
             break;
+            
+        default:
+            printf("\nOpcao invalida. A segunda soma sera 0.\n");
+            break;
+    }
 
-            default: 
-            printf("Opção inválida. Tente novamente.\n");
-            break;    
-        }
+    // Comparação das somas
+    printf("\n--- Resultado Final ---\n");
+    if (soma1 > soma2) {
+        printf("A soma da primeira escolha (%lld) eh maior que a soma da segunda escolha (%lld)!\n", soma1, soma2);
+    } else if (soma2 > soma1) {
+        printf("A soma da segunda escolha (%lld) eh maior que a soma da primeira escolha (%lld)!\n", soma2, soma1);
+    } else {
+        printf("As somas sao iguais (%lld)!\n", soma1);
+    }
     
     return 0;
 }
