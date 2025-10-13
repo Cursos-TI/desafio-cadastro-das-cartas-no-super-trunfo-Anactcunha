@@ -4,14 +4,16 @@
 
 int main() {
 
+    // Dados das cartas (usando variaveis individuais para a comparação), as mesmas variáveis foram usadas no nível iniciante e intermediário.
+    
     int escolha1, escolha2, resultado;
     
-// Dados das cartas (usando variaveis individuais para a comparação), as mesmas variáveis foram usadas no nível iniciante e intermediário.
     int numerodacarta1 = 57;
     int numerodacarta2 = 37;
 
     unsigned long populacao1 = 18307950;
     unsigned long populacao2 = 256420400;
+    unsigned long soma;
 
     int numerodepontosturisticos1 = 25;
     int numerodepontosturisticos2 = 103;
@@ -49,6 +51,8 @@ int main() {
         printf("1. numero da carta:\n");
         printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodacarta1); 
         printf("O computador escolheu a carta 2! O número dela é: ""%d\n", numerodacarta2);
+        soma = numerodacarta1 + numerodacarta2;
+        printf("A soma das cartas é: %d\n", soma);//apresentação da soma dos atributos
         resultado = numerodacarta1 > numerodacarta2 ? 1 : 0;
         if (numerodacarta1 == numerodacarta2) {
             printf("As cartas empataram!\n");
@@ -61,10 +65,12 @@ int main() {
 
         case 2:
         printf("2. população:\n");
-        printf("Você escolheu a carta 1! O número dela é: ""%lu\n", numerodacarta1); 
-        printf("O computador escolheu a carta 2! O número dela é: ""%lu\n", numerodacarta2);
-        resultado = numerodacarta1 > numerodacarta2 ? 1 : 0;
-            if (numerodacarta1 == numerodacarta2) {
+        printf("Você escolheu a carta 1! O número dela é: ""%lu\n", populacao1); 
+        printf("O computador escolheu a carta 2! O número dela é: ""%lu\n", populacao2);
+        soma = populacao1 + populacao2;
+        printf("A soma das cartas é: %lu\n", soma);
+        resultado = populacao1 > populacao2 ? 1 : 0;
+            if (populacao1 == populacao2) {
                 printf("As cartas empataram!\n");
             } else if (resultado == 1) {
                 printf("Carta 1 é o numero maior e venceu a rodada!\n");
@@ -75,10 +81,13 @@ int main() {
         case 3:
 
         printf("3. numero de pontos turísticos:\n");
-        printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodacarta1); 
-        printf("O computador escolheu a carta 2! O número dela é: ""%d\n", numerodacarta2);
-        resultado = numerodacarta1 > numerodacarta2 ? 1 : 0;
-            if (numerodacarta1 == numerodacarta2) {
+        printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodepontosturisticos1); 
+        printf("O computador escolheu a carta 2! O número dela é: ""%d\n", numerodepontosturisticos2);
+        soma = numerodepontosturisticos1 + numerodepontosturisticos2;
+        printf("A soma das cartas é: %d\n", soma);
+        resultado = populacao1 > populacao2 ? 1 : 0;
+        resultado = numerodepontosturisticos1 > numerodepontosturisticos2 ? 1 : 0;
+            if (numerodepontosturisticos1 == numerodepontosturisticos2) {
                 printf("As cartas empataram!\n");
             } else if (resultado == 1) {
                 printf("Carta 1 é o numero maior e venceu a rodada!\n");
@@ -100,6 +109,8 @@ int main() {
         printf("1. numero da carta:\n");
         printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodacarta1); 
         printf("O computador escolheu a carta 2! O número dela é: ""%d\n", numerodacarta2);
+        soma = numerodacarta1 + numerodacarta2;
+        printf("A soma das cartas é: %d\n", soma);
         resultado = numerodacarta1 > numerodacarta2 ? 1 : 0;
         if (numerodacarta1 == numerodacarta2) {
             printf("As cartas empataram!\n");
@@ -112,10 +123,12 @@ int main() {
 
         case 2:
         printf("2. população:\n");
-        printf("Você escolheu a carta 1! O número dela é: ""%lu\n", numerodacarta1); 
-        printf("O computador escolheu a carta 2! O número dela é: ""%lu\n", numerodacarta2);
-        resultado = numerodacarta1 > numerodacarta2 ? 1 : 0;
-            if (numerodacarta1 == numerodacarta2) {
+        printf("Você escolheu a carta 1! O número dela é: ""%lu\n", populacao1); 
+        printf("O computador escolheu a carta 2! O número dela é: ""%lu\n", populacao2);
+        soma = populacao1 + populacao2;
+        printf("A soma das cartas é: %lu\n", soma);
+        resultado = populacao1 > populacao2 ? 1 : 0;
+            if (populacao1 == populacao2) {
                 printf("As cartas empataram!\n");
             } else if (resultado == 1) {
                 printf("Carta 1 é o numero maior e venceu a rodada!\n");
@@ -127,10 +140,12 @@ int main() {
         case 3:
 
         printf("3. numero de pontos turísticos:\n");
-        printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodacarta1); 
-        printf("O computador escolheu a carta 2! O número dela é: ""%d\n", numerodacarta2);
-        resultado = numerodacarta1 > numerodacarta2 ? 1 : 0;
-            if (numerodacarta1 == numerodacarta2) {
+        printf("Você escolheu a carta 1! O número dela é: ""%d\n", numerodepontosturisticos1); 
+        printf("O computador escolheu a carta 2! O número dela é: ""%d\n", numerodepontosturisticos2);
+        soma = numerodepontosturisticos1 + numerodepontosturisticos2;
+        printf("A soma das cartas é: %d\n", soma);
+        resultado = numerodepontosturisticos1 > numerodepontosturisticos2 ? 1 : 0;
+            if (numerodepontosturisticos1 == numerodepontosturisticos2) {
                 printf("As cartas empataram!\n");
             } else if (resultado == 1) {
                 printf("Carta 1 é o numero maior e venceu a rodada!\n");
